@@ -122,7 +122,7 @@ Php::Value php_capnp(Php::Parameters &parameters) {
 
 extern "C" {
 	PHPCPP_EXPORT void *get_module() {
-		static Php::Extension extension("php_capnp", "1.0");
+		static Php::Extension extension("php_capnp", "0.1");
 		extension.add<php_capnp>("capnp");
 
 		extension.add(Php::Ini("php_capnp.schema", ""));
